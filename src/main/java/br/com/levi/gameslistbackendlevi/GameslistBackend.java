@@ -1,5 +1,6 @@
 package br.com.levi.gameslistbackendlevi;
 
+import br.com.levi.gameslistbackendlevi.entities.Game;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
