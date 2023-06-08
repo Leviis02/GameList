@@ -1,18 +1,21 @@
 package br.com.levi.gameslistbackendlevi.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
+import org.springframework.beans.factory.annotation.Autowired;
 
+import javax.annotation.processing.Generated;
 import java.util.Objects;
 
 @Entity
 @Table (name = "tb_game_list")
 public class GameList {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
 
+    public GameList() {
+    }
     public GameList(Long id, String name) {
         this.id = id;
         this.name = name;
